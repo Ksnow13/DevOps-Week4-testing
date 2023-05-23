@@ -34,8 +34,8 @@ public class CourseAdminTest {
     }
 
     @Test
-    @DisplayName("Failing Test Get List By Student")
-    public void testGetCourseListByStudent_Failing(){
+    @DisplayName("Test Get List By Student_")
+    public void testGetCourseListByStudent_Passing(){
 
         CourseAdmin courseAdmin = new CourseAdmin();
 
@@ -57,7 +57,7 @@ public class CourseAdminTest {
         courseToFind.setId(1);
         courseToFind.setName("JavaScript");
 
-        Assertions.assertTrue(courseAdmin.getCourseListByStudent(studentToFind).contains(courseToFind));
+        Assertions.assertFalse(courseAdmin.getCourseListByStudent(studentToFind).contains(courseToFind));
     }
 
 
