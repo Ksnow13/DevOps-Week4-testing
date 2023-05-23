@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.keyin.domain.CourseAdminTest" time="0.002" errors="0" skipped="0">
+<testsuite tests="2" failures="1" name="com.keyin.domain.CourseAdminTest" time="0.008" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.3.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -65,5 +65,16 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.keyin.domain.CourseAdminTest" name="com.keyin.domain.CourseAdminTest.testGetCourseListByStudent" time="0.002"/>
+  <testcase classname="com.keyin.domain.CourseAdminTest" name="com.keyin.domain.CourseAdminTest.testGetCourseListByStudent" time="0.003"/>
+  <testcase classname="com.keyin.domain.CourseAdminTest" name="com.keyin.domain.CourseAdminTest.testGetCourseListByStudent_Failing" time="0.005">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at com.keyin.domain.CourseAdminTest.testGetCourseListByStudent_Failing(CourseAdminTest.java:60)
+</failure>
+  </testcase>
 </testsuite>
